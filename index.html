@@ -31,32 +31,24 @@
 </tr>
 
 </table>
+
 </form>
 <script language="javascript">
-function login()
+function check(form)
 {
-var uname=docunent.getElementById("username").value;
-var pwd=docunent.getElementById("password").value
-if((uname =="))
+
+if(form.userid.value == "Roseindia" && form.pwd.value == "Roseindia")
 {
-  alert("please enterusername")
-	
-}
-else if ((pwd =="))
-{
-	alert("enter the Password ")
-	
-}
-  else if ((uname=="Testuser" && pwd=="user123"));
-}
-    
-  alert ("login done Suceessfully);
+        alert("Login Successful")
+	return true;
+
 }
 else
 {
-  alert ("login failure);
-}	 
-
+	alert("Error Password or Username")
+	return false;
+}
+}
 </script>
 
 </body>
